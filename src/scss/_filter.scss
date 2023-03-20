@@ -1,0 +1,40 @@
+@keyframes filter {
+  0% {
+    filter: none;
+  }
+  10% {
+    filter: hue-rotate(120deg);
+  }
+  20% {
+    filter: hue-rotate(240deg);
+  }
+  30% {
+    filter: saturate(0.5);
+  }
+  40% {
+    filter: saturate(2);
+  }
+  50% {
+    filter: none;
+  }
+  60% {
+    filter: hue-rotate(72deg) brightness(1.2);
+  }
+  70% {
+    filter: hue-rotate(144deg) brightness(0.8);
+  }
+  80% {
+    filter: hue-rotate(216deg) contrast(1.2);
+  }
+  90% {
+    filter: hue-rotate(288deg) contrast(0.8);
+  }
+  100% {
+    filter: none;
+  }
+}
+
+#cat {
+  max-width: 90%;
+  animation: filter 3s infinite;
+}

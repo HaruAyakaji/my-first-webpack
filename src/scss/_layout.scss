@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid: "header" "." ".";
+
+  @media (min-width: 576px) {
+    grid: "header header" ". ." / 50% 50%;
+  }
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+}
+
+.section {
+  text-align: center;
+}
